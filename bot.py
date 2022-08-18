@@ -3,6 +3,7 @@ import telebot
 import requests
 import json
 import csv
+#super_secret_stuff
 yourkey = '17f1964'
 bot = telebot.TeleBot('5592137103:AAHV2DZY7W8UOb1-UBu4p6gjQQiYoPNj-lE')
 
@@ -23,24 +24,21 @@ def goodbye(message):
 
 @bot.message_handler(func=lambda message: botRunning, commands=['help'])
 def helpProvider(message):
-    # bot.reply_to(message, '1.0 You can use \"/nutrition Units Quantity-Type Food-Name\" command to get the nutrients of a particular food. For eg: \"/nutrition 1 piece chapati\"\n\n2.1 For using the bot to get details about an exercise you need to first set the user data using the command \"/user Name, Gender, Weight(in Kg), Height (in cm), Age\". For eg: \"/user Akshat, Male, 70, 6, 19\n\n2.2 Then you can use the command \"/execise Duration-amount Duration-unit Exercise-name\" to get data about an exercise. For eg: \"/exercise 40 minutes push-ups\"\n\n3.0. You can use the command \"/reports Report-name\" to get the reports in CSV Format. For eg: \"/reports nutrition\" to get nutrition report and \"/reports exercise\" to get exercise reports or use the command \"/reports nutrition, exercise\" to get both nutrition and exercise reports\n\n4.0. You can use the command \"/stop\" or the command \"/bye\" to stop the bot.')
     bot.reply_to(message, '1.0 You can use \"/movie MOVIE_NAME\" command to get the details of a particular movie. For eg: \"/movie The Shawshank Redemption\"\n\n2.0. You can use \"/export\" command to export all the movie data in CSV format.\n\n3.0. You can use \"/stop\" or the command \"/bye\" to stop the bot.')
 
 moviedata = []
 @bot.message_handler(func=lambda message: botRunning, commands=['movie'])
 def getMovie(message):
     bot.reply_to(message, 'Getting movie info...')
-    # TODO: 1.2 Get nutrition information from the API
     text = message.text
     text2= text.replace('/movie ', '')
-    print(text2)
     
     lst=[]
     if ',' in text2:
         lst = text2.split(',')
     else:
         lst.append(text2)
-    print(lst)    
+
     global headers
     
     csvheader= ['Title', "Year", 'Released', "imdbRating"]
@@ -81,7 +79,7 @@ def getMovie(message):
         
         
 @bot.message_handler(func=lambda message: botRunning, commands=['export'])
-def getCaloriesBurn(message):
+def export_CSV(message):
     bot.reply_to(message, 'Generating file...')
     bot.reply_to(message, 'File generated!')
     doc = open('movie.csv', 'rb')
@@ -91,5 +89,4 @@ def getCaloriesBurn(message):
 def default(message):
     bot.reply_to(message, 'I did not understand '+'\N{confused face}')
     
-
 bot.infinity_polling()
