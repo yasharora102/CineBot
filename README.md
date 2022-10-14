@@ -3,7 +3,7 @@ This is a Python Telegram bot challenge for Praveshan 2022.
 
 ## 🏃‍ Getting Started
 - Fork this repository and then clone it.
-- Create a python virtual environment in the directory, and activate it:
+- Create a Python virtual environment in the directory, and activate it:
   ```sh
   python3 -m venv .
   source bin/activate
