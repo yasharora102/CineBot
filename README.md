@@ -1,5 +1,5 @@
 ## 📌 Introduction
-This is a python telegram bot challenge for Praveshan 2022.
+This is a Python Telegram bot challenge for Praveshan 2022.
 
 ## 🏃‍ Getting Started
 - Fork this repository and then clone it.
@@ -18,7 +18,7 @@ This is a python telegram bot challenge for Praveshan 2022.
   ```
 
 ## 🧱 Stages
-   - **Stage 1:** Fetching Movie Data from the OMDB API and displaying it to telegram chatbox.
+   - **Stage 1:** Fetching Movie Data from the OMDB API and displaying it to the Telegram chatbox.
    
       - 3 TODOs from 1.1 to 1.3. 
   
@@ -34,7 +34,7 @@ This is a python telegram bot challenge for Praveshan 2022.
 - [BotFather](https://medium.com/shibinco/create-a-telegram-bot-using-botfather-and-get-the-api-token-900ba00e0f39)
 
 ## 📝 Submission Guidelines
-Add the python script to the task-4 folder in your amfoss-tasks repository.
+Add the Python script to the task-4 folder in your amfoss-tasks repository.
 
 
 ## 👀 Live Bot Preview
