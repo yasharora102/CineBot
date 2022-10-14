@@ -1,5 +1,5 @@
 ## 📌 Introduction
-This is a python telegram bot challenge.
+This is a python telegram bot challenge for Praveshan 2022.
 
 ## 🏃‍ Getting Started
 - Fork this repository and then clone it.
@@ -26,7 +26,7 @@ This is a python telegram bot challenge.
 
       - 2 TODOs 2.1 and 2.2.
 
-  - **Stage 3:** **OPTIONAL** **(Get extra karma points)** Deploy the bot to Heroku.
+  - **Stage 3:** **OPTIONAL** Deploy the bot to [Replit](https://replit.com/).
 
 ## 🎓 Resources
 - [OMDB API](https://www.omdbapi.com/)
@@ -34,7 +34,7 @@ This is a python telegram bot challenge.
 - [BotFather](https://medium.com/shibinco/create-a-telegram-bot-using-botfather-and-get-the-api-token-900ba00e0f39)
 
 ## 📝 Submission Guidelines
-Add the python script to the task-6 folder in your amfoss-tasks repository.
+Add the python script to the task-4 folder in your amfoss-tasks repository.
 
 
 ## 👀 Live Bot Preview
