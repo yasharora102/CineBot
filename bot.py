@@ -74,9 +74,7 @@ def getMovie(message):
                 moviedata.append(listing)
 
                 # code for saving the images
-                movie_title = parsed_request["Title"]
                 photo_url = parsed_request["Poster"]
-                photo_request = requests.get(photo_url)
                 
                 reply = "Movie found!"
                 caption = "Movie Name: " + parsed_request["Title"] + "\n" + "Year: " + parsed_request["Year"] + "\n" + "Released: " + parsed_request["Released"] + "\n" + "imdbRating: " + parsed_request["imdbRating"]
