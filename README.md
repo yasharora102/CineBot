@@ -13,4 +13,5 @@ To use Cinebot, simply run the script and start chatting with the bot on Telegra
 - `/stop` - Stop the bot
 
 ## Working
+https://user-images.githubusercontent.com/29159814/236293934-0f9ff5c6-8efc-4491-bbd2-425d43ca50b0.mp4
 
